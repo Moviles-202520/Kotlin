@@ -148,12 +148,16 @@
 
             <!-- Card Noticia -->
             <LinearLayout
+                android:id="@+id/news_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@drawable/card_background"
                 android:padding="16dp"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -202,6 +206,7 @@
                         android:textColor="@color/medium_gray" />
                 </LinearLayout>
             </LinearLayout>
+
 
             <!-- Puedes duplicar este bloque para más noticias -->
         </LinearLayout>
